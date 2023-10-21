@@ -1,0 +1,91 @@
+body {
+  display: flex;
+  /* flex-direction: column-reverse; */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: black; /* Set the background color to black */
+}
+
+#container {
+  display: flex;
+  flex-direction: column; /* Change the direction to column */
+  align-items: center; /* Center horizontally */
+}
+
+#canvas-container {
+  position: relative;
+  display: flex;
+  flex-direction: column; /* Change the direction to column */
+  align-items: center; /* Center horizontally */
+}
+
+#app {
+  display: block;
+}
+
+#controls {
+  /* background: rgba(0, 0, 0, 0.5);  Background color for the buttons */
+  display: flex;
+  padding: 10px;
+  text-align: center; /* Center the buttons horizontally */
+  width: 100%; /* Make the controls span the entire width */
+  align-items: center;
+  margin-top: 10px; /* Add some margin to separate from canvas-container */
+  column-gap: 30px;
+  justify-content: center;
+}
+
+
+
+#controls button {
+  background: #ffffff;
+  border: none;
+  cursor: pointer;
+  margin: 5px;
+}
+
+canvas {
+  border: 1px solid black;
+}
+
+#generationRateLabel {
+  color: white;
+  margin-right: 5px;
+  font-size: 20px;
+}
+
+#generationRate {
+  color: white;
+  font-size: 20px;
+}
+
+#gravityLabel {
+  color: white;
+  margin-right: 5px;
+  font-size: 20px;
+}
+
+#gravityValue {
+  color: white;
+  font-size: 20px;
+}
+
+/* #shape-count {
+  display: flex;
+  color: white;
+  font-size: 20px;
+} */
+
+#text {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+  margin-top: 10px; /* Add some margin to separate from the controls */
+  text-align: center;
+  column-gap: 50px
+}
