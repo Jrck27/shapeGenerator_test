@@ -1,1 +1,39 @@
-<!doctype html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Shape Generator using Pixi.js</title><link rel="stylesheet" href="../style.css"><script defer="defer" src="./index_bundle.js"></script><script defer="defer" src="bundle.js"></script><script defer="defer" src="bundle.js"></script></head><body><div id="container"><div id="text"><div id="shape-count">Shapes Count: 0</div><div id="surfaceArea">Surface Area: 0 px²</div></div><div id="canvas-container"><canvas id="app"></canvas></div><div id="controls"><div id="frequency-container"><button id="decreaseButton">-</button> <span id="generationRateLabel">No. of shapes per second: </span><span id="generationRate">1</span> <button id="increaseButton">+</button></div><div id="gravity-container"><button id="decreaseGravity">-</button> <span id="gravityLabel">Gravity: </span><span id="gravityValue">1</span> <button id="increaseGravity">+</button></div></div></div><script src="bundle.js"></script></body></html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shape Generator using Pixi.js</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="text">
+            <div id="shape-count">Shapes Count: 0</div>
+            <div id="surfaceArea">Surface Area: 0 px²</div>
+        </div>
+
+        <div id="canvas-container">
+            <canvas id="app"></canvas>
+        </div>
+
+        <div id="controls">
+            <div id="frequency-container">
+                <button id="decreaseButton">-</button>
+                <span id="generationRateLabel">No. of shapes per second: </span>
+                <span id="generationRate">1</span>
+                <button id="increaseButton">+</button>
+
+            </div>
+
+            <div id="gravity-container">
+                <button id="decreaseGravity">-</button>
+                <span id="gravityLabel">Gravity: </span>
+                <span id="gravityValue">1</span>
+                <button id="increaseGravity">+</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="bundle.js"></script>
+</body>
+</html>
