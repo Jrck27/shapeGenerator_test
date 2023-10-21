@@ -89,3 +89,31 @@ canvas {
   text-align: center;
   column-gap: 50px
 }
+
+/* Default styles for larger screens and landscape orientation */
+canvas {
+  border: 1px solid black;
+  width: 100%; /* Take up the full width */
+  height: 70vh; /* Adjust the height as needed */
+}
+
+/* Media query for screens with a maximum width of 768px (typical for mobile devices) and landscape orientation */
+@media (max-width: 768px) and (orientation: landscape) {
+  canvas {
+    height: 70vh; /* Adjust the canvas height for landscape orientation on mobile devices */
+  }
+  
+}
+
+/* Media query for screens with a maximum width of 768px (typical for mobile devices) and portrait orientation */
+@media (max-width: 768px) and (orientation: portrait) {
+  canvas {
+    height: 70vh; /* Adjust the canvas height for portrait orientation on mobile devices */
+  }
+  #text {
+    flex-direction: column;
+  }
+  #controls {
+    flex-direction: column;
+  }
+}
